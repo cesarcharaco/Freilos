@@ -57,7 +57,7 @@
                 </div>
                 <div class="text-center q-ma-sm">
                   <q-btn
-                    label="Regístrate aqui"
+                    label="Regístrate aqu"
                     flat
                     dense
                     text-color="red"
