@@ -5,7 +5,7 @@
         <div class="col column items-center justify-center">
           <img
             src="../statics/logofreilos.png"
-            alt="Logo GuioMercado"
+            alt="Logo Freilos"
             style="width: 250px;"
           >
           <q-form @submit="onSubmit">
