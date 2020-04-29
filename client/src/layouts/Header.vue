@@ -12,8 +12,8 @@
               <div>
                 <div>
                   <img
-                    src="../statics/EiCash_Blanco.png"
-                    alt="logoEicashBlanco"
+                    src="../statics/logofreilos.png"
+                    alt="logo"
                     style="width:150px"
                   >
 
@@ -126,8 +126,7 @@
         </div>
       </q-header>
       <q-page-container style="width:100%">
-        <barnav />
-        <tarjetas />
+        <BarraNavegacion v-if="prueba"/>
         <router-view />
       </q-page-container>
     </q-layout>
@@ -144,26 +143,14 @@
 }
 </style>
 <script>
-import { mapGetters, mapActions } from 'vuex'
+import BarraNavegacion from '../Components/BarraNavegacion'
 export default {
-  components: {},
+  components: { BarraNavegacion },
   data () {
     return {
-      left: false,
-      profile: {
-        rating: 5
-      },
       nNotify: 0,
       myNotification: {},
-      active_link_menu: '',
-      navigation: [
-        {
-          name: 'Inicio',
-          url: '',
-          icon: 'home',
-          permission: 'home'
-        }
-      ]
+      prueba: false
     }
   },
   computed: {

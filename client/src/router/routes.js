@@ -2,13 +2,28 @@
 const routes = [
   {
     path: '/menu',
-    component: () => import('layouts/MainLayout.vue'),
+    component: () => import('layouts/MainLayout.vue')
+  },
+  {
+    path: '/header',
+    component: () => import('layouts/Header.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') },
-      { path: 'registrarconductor', component: () => import('pages/conductor/Form.vue') },
-      { path: 'registrarcamion', component: () => import('pages/camion/Form.vue') },
-      { path: 'registrardespacho', component: () => import('pages/despacho/Form.vue') },
-      { path: 'registrarusuario', component: () => import('pages/usuarios/Form.vue') }
+      {
+        path: '/camion',
+        component: () => import('pages/camion/Form.vue')
+      },
+      {
+        path: '/conductor',
+        component: () => import('pages/conductor/Form.vue')
+      },
+      {
+        path: '/despacho',
+        component: () => import('pages/despacho/Form.vue')
+      },
+      {
+        path: '/usuarios',
+        component: () => import('pages/usuarios/Form.vue')
+      }
     ]
   },
   {

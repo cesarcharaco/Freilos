@@ -127,9 +127,11 @@ export default {
       optionscertificado: [
         'Si', 'No'
       ],
+      optionschofer: ['Chofer1', 'Chofer2'],
       form: {
       },
-      text: ''
+      text: '',
+      loading: false
     }
   },
   mounted () {

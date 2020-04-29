@@ -108,7 +108,8 @@ export default {
       ],
       form: {
       },
-      text: ''
+      text: '',
+      loading: false
     }
   },
   mounted () {
