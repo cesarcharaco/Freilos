@@ -23,6 +23,10 @@ const routes = [
       {
         path: '/usuarios',
         component: () => import('pages/usuarios/Form.vue')
+      },
+      {
+        path: '/serviciosCarga',
+        component: () => import('pages/serviciosCarga/Lista.vue')
       }
     ]
   },

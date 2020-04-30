@@ -16,7 +16,6 @@
                     alt="logo"
                     style="width:150px"
                   >
-
                 </div>
               </div>
               <div class="absolute-top-right q-pa-sm">
@@ -126,7 +125,7 @@
         </div>
       </q-header>
       <q-page-container style="width:100%">
-        <BarraNavegacion v-if="prueba"/>
+        <BarraNavegacion v-if="prueba" />
         <router-view />
       </q-page-container>
     </q-layout>

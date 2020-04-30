@@ -4,6 +4,13 @@
       horizontal
       style="height: 70px; width: 100%;"
       class="bg-grey-1"
+      :thumb-style="{
+        right: '2px',
+        borderRadius: '5px',
+        backgroundColor: '#027be3',
+        width: '5px',
+        opacity: 0.75
+      }"
     >
       <div class="row no-wrap">
         <q-btn
