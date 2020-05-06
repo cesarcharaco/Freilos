@@ -27,6 +27,10 @@ const routes = [
       {
         path: '/serviciosCarga',
         component: () => import('pages/serviciosCarga/Lista.vue')
+      },
+      {
+        path: '/cargamento',
+        component: () => import('pages/cargamento/Lista.vue')
       }
     ]
   },
